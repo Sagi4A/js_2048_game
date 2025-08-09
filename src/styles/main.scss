@@ -24,11 +24,21 @@ body {
   border-radius: 12px;
   padding: 10px;
   box-shadow: 0 0 20px rgba(150, 150, 150, 0.2);
+
+  table-layout: fixed;
+  width: 350px;
 }
 
 .field-cell {
   width: 75px;
   height: 75px;
+  min-width: 75px;
+  min-height: 75px;
+  max-width: 75px;
+  max-height: 75px;
+  box-sizing: border-box;
+  padding: 0;
+
   border-radius: 12px;
   text-align: center;
   line-height: 75px;
@@ -90,7 +100,7 @@ body {
 } /* рубін */
 .field-cell--256 {
   background: linear-gradient(135deg, #fff, #e0e0e0);
-  color: #000;
+  color: #a79797;
 } /* алмаз */
 .field-cell--512 {
   background: linear-gradient(135deg, #2f2f2f, #000);
